@@ -1,0 +1,46 @@
+{
+  "lastUpdate": "2026-09-20T16:27:00-03:00",
+  "environment": { "temperature": 24.8, "humidity": 63 },
+  "irrigation": { "active": false, "dailyLiters": 17.5 },
+  "sectors": [
+    { "id": "s1", "number": "01", "crop": "Maíz dulce", "moisture": 52, "min": 40, "max": 65, "status": "Adecuado" },
+    { "id": "s2", "number": "02", "crop": "Zapallo", "moisture": 28, "min": 35, "max": 60, "status": "Seco" },
+    { "id": "s3", "number": "03", "crop": "Arveja", "moisture": 44, "min": 38, "max": 58, "status": "Adecuado" },
+    { "id": "s4", "number": "04", "crop": "Cítricos", "moisture": 49, "min": 42, "max": 62, "status": "Adecuado" }
+  ],
+  "devices": [
+    { "id": "esp32-central", "name": "ESP32 central", "location": "Nodo principal", "variable": "Concentración de telemetría", "status": "Operativo", "lastContact": "hace 2 min", "signal": "-48 dBm", "icon": "cpu" },
+    { "id": "sensor-1", "name": "Sensor 1", "location": "Sector 1", "variable": "Humedad de suelo", "status": "Online", "lastContact": "hace 2 min", "signal": "Cableado", "icon": "wifi" },
+    { "id": "sensor-2", "name": "Sensor 2", "location": "Sector 2", "variable": "Humedad de suelo", "status": "Online", "lastContact": "hace 2 min", "signal": "Cableado", "icon": "wifi" },
+    { "id": "sensor-3", "name": "Sensor 3", "location": "Sector 3", "variable": "Humedad de suelo", "status": "Online", "lastContact": "hace 2 min", "signal": "Cableado", "icon": "wifi" },
+    { "id": "sensor-4", "name": "Sensor 4", "location": "Sector 4", "variable": "Humedad de suelo", "status": "Online", "lastContact": "hace 2 min", "signal": "Cableado", "icon": "wifi" },
+    { "id": "dht22", "name": "DHT22", "location": "Abrigo exterior", "variable": "Temperatura y humedad", "status": "Online", "lastContact": "hace 2 min", "signal": "Cableado", "icon": "gauge" },
+    { "id": "yf-s201", "name": "YF-S201", "location": "Línea general", "variable": "Caudal y volumen", "status": "Operativo", "lastContact": "Sin riego activo", "signal": "Pulsos", "icon": "gauge" },
+    { "id": "microsd", "name": "microSD", "location": "Caja IP65", "variable": "Respaldo local", "status": "Preparado", "lastContact": "Sin escrituras", "signal": "SPI", "icon": "storage" }
+  ],
+  "activities": [
+    { "id": "a1", "title": "Meteorología sin dato válido", "detail": "Esperando actualización externa", "time": "16:27" },
+    { "id": "a2", "title": "Lectura de suelos completada", "detail": "4 sectores actualizados", "time": "16:27" },
+    { "id": "a3", "title": "Riego en estado inactivo", "detail": "0 L en la última hora", "time": "16:27" },
+    { "id": "a4", "title": "Dispositivos operativos", "detail": "Nodo central y sensores preparados", "time": "16:27" }
+  ],
+  "irrigationRecords": [
+    { "id": "r1", "sectorId": "s1", "startLabel": "20/09 · 09:10", "duration": 12, "flow": 0.8, "volume": 9.5, "type": "Manual" },
+    { "id": "r2", "sectorId": "s3", "startLabel": "19/09 · 18:40", "duration": 15, "flow": 0.8, "volume": 12.0, "type": "Manual" },
+    { "id": "r3", "sectorId": "s4", "startLabel": "18/09 · 18:10", "duration": 10, "flow": 0.8, "volume": 8.0, "type": "Manual" }
+  ],
+  "history": [
+    { "time": "16 h", "s1": 60, "s2": 39, "s3": 50, "s4": 55, "rain": 0 },
+    { "time": "18 h", "s1": 58, "s2": 37, "s3": 49, "s4": 53, "rain": 0 },
+    { "time": "20 h", "s1": 56, "s2": 34, "s3": 47, "s4": 51, "rain": 0 },
+    { "time": "22 h", "s1": 54, "s2": 32, "s3": 46, "s4": 50, "rain": 0 },
+    { "time": "00 h", "s1": 52, "s2": 30, "s3": 45, "s4": 48, "rain": 0 },
+    { "time": "02 h", "s1": 50, "s2": 28, "s3": 44, "s4": 47, "rain": 0 },
+    { "time": "04 h", "s1": 48, "s2": 27, "s3": 42, "s4": 45, "rain": 0 },
+    { "time": "06 h", "s1": 49, "s2": 26, "s3": 42, "s4": 45, "rain": 0 },
+    { "time": "08 h", "s1": 51, "s2": 27, "s3": 43, "s4": 46, "rain": 0 },
+    { "time": "10 h", "s1": 53, "s2": 27, "s3": 44, "s4": 48, "rain": 0 },
+    { "time": "12 h", "s1": 54, "s2": 28, "s3": 45, "s4": 49, "rain": 0 },
+    { "time": "14 h", "s1": 52, "s2": 28, "s3": 44, "s4": 49, "rain": 0 }
+  ]
+}

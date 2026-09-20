@@ -1,0 +1,10 @@
+{
+  "stationDateTime": null,
+  "queriedAt": "2026-09-20T16:27:00-03:00",
+  "dailyMm": null,
+  "intensityMmH": null,
+  "origin": "externo",
+  "publicSource": "Estación meteorológica cercana",
+  "quality": "no_disponible",
+  "message": "La fuente externa todavía no entregó un registro validado."
+}
